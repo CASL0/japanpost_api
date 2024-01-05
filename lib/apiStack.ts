@@ -24,7 +24,7 @@ export class ApiStack extends Stack {
 
     // S3 Selectのラムダ
     const lambdaFunction = new Function(this, 'Lambda', {
-      functionName: 'PostS3Select',
+      functionName: 'JapanPost_S3_Select',
       handler: 'handler.handler',
       runtime: Runtime.NODEJS_16_X,
       code: new AssetCode('./src'),
@@ -39,6 +39,7 @@ export class ApiStack extends Stack {
 
     // API Gatewayを作成し、ラムダと統合
     const restApi = new RestApi(this, 'RestApi', {
+      restApiName: '郵便番号検索API',
       deployOptions: {
         stageName: props?.stage,
       },
