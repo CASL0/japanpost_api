@@ -15,7 +15,8 @@
     "fix": "gts fix",
     "prepare": "yarn run compile",
     "pretest": "yarn run compile",
-    "posttest": "yarn run lint"
+    "posttest": "yarn run lint",
+    "postinstall": "curl -Lo assets/utf_ken_all.zip https://www.post.japanpost.jp/zipcode/dl/utf/zip/utf_ken_all.zip"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
