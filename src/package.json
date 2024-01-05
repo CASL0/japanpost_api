@@ -1,0 +1,26 @@
+{
+  "name": "lambda_handler",
+  "version": "1.0.0",
+  "description": "ラムダのソース",
+  "main": "handler.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CASL0/japanpost_api.git"
+  },
+  "author": "CASL0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CASL0/japanpost_api/issues"
+  },
+  "homepage": "https://github.com/CASL0/japanpost_api#readme",
+  "devDependencies": {
+    "typescript": "~5.3.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1530.0"
+  }
+}
