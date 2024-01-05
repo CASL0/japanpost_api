@@ -130,3 +130,8 @@ dist
 .pnp.*
 
 assets/utf_ken_all.zip
+
+cdk.out
+*.js
+*.d.ts
+*.js.map
