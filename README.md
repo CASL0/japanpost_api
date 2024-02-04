@@ -27,7 +27,7 @@ API Gateway を Lambda と統合し、Lambda から S3 Select を呼び出して
 - Lambda
 - S3
 
-![infra](https://github.com/CASL0/japanpost_api/assets/28913760/cde13848-1da3-4318-bedd-de3b4bed2103)
+![infra](https://github.com/CASL0/japanpost_api/assets/28913760/bc33b472-fd01-47e7-941e-b415ac532a77)
 
 ### 詳細
 
