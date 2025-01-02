@@ -21,6 +21,6 @@
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "include": ["src/**/*.ts", "test/**/*.ts", "lib/**/*.ts", "bin/**/*.ts"],
   "exclude": ["node_modules", "cdk.out"]
 }
