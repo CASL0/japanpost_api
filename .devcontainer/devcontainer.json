@@ -27,7 +27,8 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "vivaxy.vscode-conventional-commits"
       ],
       "settings": {
         "editor.formatOnSave": true,
