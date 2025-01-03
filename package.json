@@ -13,7 +13,7 @@
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "yarn run compile",
+    "prepare": "husky",
     "pretest": "yarn run compile",
     "posttest": "yarn run lint",
     "postinstall": "curl -Lo assets/utf_ken_all.zip https://www.post.japanpost.jp/zipcode/dl/utf/zip/utf_ken_all.zip"
