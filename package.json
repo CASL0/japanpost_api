@@ -18,6 +18,10 @@
     "posttest": "yarn run lint",
     "postinstall": "curl -Lo assets/utf_ken_all.zip https://www.post.japanpost.jp/zipcode/dl/utf/zip/utf_ken_all.zip"
   },
+  "lint-staged": {
+    "**/*.md": "markdownlint-cli2",
+    "**/*.ts": "yarn lint"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "@types/node": "22.10.3",
