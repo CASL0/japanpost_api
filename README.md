@@ -1,5 +1,10 @@
 # japanpost_api
 
+[![Test](https://github.com/CASL0/japanpost_api/actions/workflows/test.yaml/badge.svg)](https://github.com/CASL0/japanpost_api/actions/workflows/test.yaml)
+[![Lint](https://github.com/CASL0/japanpost_api/actions/workflows/lint.yaml/badge.svg)](https://github.com/CASL0/japanpost_api/actions/workflows/lint.yaml)
+[![TypeScript Style Guide](https://img.shields.io/badge/code%20style-google-8A2BE2)](https://github.com/google/gts)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/mit)
+
 [日本郵政の郵便番号データ](https://www.post.japanpost.jp/zipcode/dl/utf-zip.html)を使用した郵便番号検索APIの構築をします。
 
 ## Requirements
