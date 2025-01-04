@@ -2,7 +2,7 @@
 
 [日本郵政の郵便番号データ](https://www.post.japanpost.jp/zipcode/dl/utf-zip.html)を使用した郵便番号検索APIの構築をします。
 
-## Getting Started
+## Requirements
 
 以下の環境変数を設定してください。
 
@@ -10,14 +10,40 @@
 - AWS_SECRET_ACCESS_KEY
 - AWS_DEFAULT_REGION
 
+## Getting Started
+
 VSCode で本プロジェクトを開き、コマンドパレット（Ctrl+Shift+P）から[Dev Containers: Reopen in Container...]を実行し、下記コマンドを実行してください。
 
 ```sh
-tsc src/handler.ts
-npx cdk deploy
+yarn compile src/handler.ts
+yarn cdk deploy
 ```
 
 デプロイ完了です。
+
+API Gatewayのサービスエンドポイントを確認し、APIをリクエストしてください。
+
+```sh
+curl http://example.com?zipcode=1010065
+```
+
+以下のレスポンスが返ってきます。
+
+```json
+[
+  {
+    "jisCode": "13101",
+    "oldZipCode": "101  ",
+    "zipCode": "1010065",
+    "prefectureKatakana": "トウキョウト",
+    "cityKatakana": "チヨダク",
+    "townKatakana": "ニシカンダ",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "town": "西神田"
+  }
+]
+```
 
 ## 構成
 
@@ -33,7 +59,7 @@ API Gateway を Lambda と統合し、Lambda から S3 Select を呼び出して
 
 1. 日本郵政の Web サイトから CSV をダウンロードします。
 
-   - https://www.post.japanpost.jp/zipcode/dl/utf/zip/utf_ken_all.zip
+   - <https://www.post.japanpost.jp/zipcode/dl/utf/zip/utf_ken_all.zip>
 
 1. S3 のバケットを作成し、上記でダウンロードした CSV を配置します。
 1. ラムダを作成し、aws-sdk を使って、S3 Select による住所検索をします。
