@@ -175,15 +175,15 @@ function convertResponse(payload: string): PostResponse[] {
       .map(e => {
         const record = e.split(',');
         return {
-          jisCode: record[0].split(':')[1],
-          oldZipCode: record[1].split(':')[1],
-          zipCode: record[2].split(':')[1],
-          prefectureKatakana: record[3].split(':')[1],
-          cityKatakana: record[4].split(':')[1],
-          townKatakana: record[5].split(':')[1],
-          prefecture: record[6].split(':')[1],
-          city: record[7].split(':')[1],
-          town: record[8].split(':')[1],
+          jisCode: record[0].split(':')[1].slice(1, -1),
+          oldZipCode: record[1].split(':')[1].slice(1, -1),
+          zipCode: record[2].split(':')[1].slice(1, -1),
+          prefectureKatakana: record[3].split(':')[1].slice(1, -1),
+          cityKatakana: record[4].split(':')[1].slice(1, -1),
+          townKatakana: record[5].split(':')[1].slice(1, -1),
+          prefecture: record[6].split(':')[1].slice(1, -1),
+          city: record[7].split(':')[1].slice(1, -1),
+          town: record[8].split(':')[1].slice(1, -1),
         };
       })
   );
