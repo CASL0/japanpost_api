@@ -34,7 +34,7 @@
     "markdownlint-cli2": "^0.17.1",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "~5.3.3"
+    "typescript": "~5.7.2"
   },
   "dependencies": {
     "aws-cdk-lib": "2.174.0",
