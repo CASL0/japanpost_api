@@ -23,7 +23,7 @@
     "**/*.ts": "yarn lint"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
+    "@types/jest": "^29.5.14",
     "@types/node": "22.10.5",
     "aws-cdk": "2.173.4",
     "aws-sdk": "^2.1692.0",
